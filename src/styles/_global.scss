@@ -4,6 +4,11 @@ body {
     font-size: 14px;
 }
 
+.App{
+    display: flex;
+    justify-content: center;
+}
+
 // Defining all fonts family default
 * {
     font-family: Arial, Helvetica, sans-serif !important;
@@ -97,11 +102,6 @@ h6 {
 	100% {
         opacity: 0;
     }
-}
-
-.content{
-    position: relative;
-    top: 48px;
 }
 
 

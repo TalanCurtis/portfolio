@@ -1,5 +1,14 @@
 .Home{
-    height: 100px;
-    width: 100px;
     background-color: green;
+    width: 100%;
+
 }
+
+// @media (max-width:426px){
+//     .Home{
+//         grid-template-columns: 100%;
+//         .content{
+//             grid-column: auto;
+//         }
+//     }
+// }
