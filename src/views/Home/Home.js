@@ -8,6 +8,7 @@ import Intro from '../../components/Intro/Intro';
 import Portfolio from '../../components/Portfolio/Portfolio';
 
 // libraries
+import {TweenLite} from 'gsap';
 import scrollToComponent from 'react-scroll-to-component';
 
 class Home extends Component{ 
@@ -16,18 +17,23 @@ class Home extends Component{
         this.handleScroll= this.handleScroll.bind(this)
     }  
 
+    componentDidMount(){
+        TweenLite.to('.Home', 1, {opacity:1})
+    }
+
     handleScroll(section){
         console.log(section)
         scrollToComponent(this[section], { offset: -60, align: 'top', duration: 1000,  ease:'inOutExpo'})
     }
 
+
     render(){
         return(
             <div className="Home">
-                 <section ref={(section) => { this.Intro = section; }}>
-                    <Intro/>
-                 </section>
                  <Nav handleScroll={this.handleScroll}/>
+                 <section ref={(section) => { this.Intro = section; }}>
+                    <Intro  handleScroll={this.handleScroll}/>
+                 </section>
                  <section ref={(section) => { this.About = section; }}>
                     <About/>
                  </section>
@@ -38,7 +44,7 @@ class Home extends Component{
                     <Contact />
                  </section>
                  <section ref={(section) => { this.Footer = section; }}>
-                    <Footer/>  
+                    <Footer handleScroll={this.handleScroll}/>  
                  </section>
             </div>
         )

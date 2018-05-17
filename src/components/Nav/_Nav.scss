@@ -1,7 +1,50 @@
-.Nav{
+.Nav {
     height: 60px;
     width: 100%;
-    background-color: purple;
+    background-color: $accentLight;
     position: sticky;
-    top: 0px;
+    top: 0px; 
+    display: grid;
+    grid-template-columns: auto auto;
+
+    .logo-containter{
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        :hover{
+            cursor: pointer;
+        }
+    }
+
+    .Burger_SVG{
+        display: none
+    }
+    .buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h3{
+            margin-right:10px; 
+        }
+        h3:hover{
+            background-color: #fff;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 426px) {
+    .Nav {
+        grid-template-columns: auto auto;
+        background-color: rgb(133, 77, 133);
+        .buttons{
+            display: none;
+        }
+        .Burger_SVG{
+            display: inline;
+            justify-self: flex-end;
+            align-self: center;
+            margin-right: 10px; 
+        }
+    }
 }

@@ -104,11 +104,15 @@ h6 {
     }
 }
 
+.active{
+    background-color: rgba(255, 0, 0, 0.534);
+}
+
 
 // Media query
-@media (min-width:426px){
-    h1 {
-        font-size: 2em;
-        font-weight: bold;
-    }
+@media (max-width:426px){
+    // h1 {
+    //     font-size: 2em;
+    //     font-weight: bold;
+    // }
 }
