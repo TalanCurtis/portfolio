@@ -1,0 +1,11 @@
+.SkillCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img{
+        height: 60px;
+        width: 60px;
+        margin: 5px;
+    }
+}

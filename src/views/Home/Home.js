@@ -23,7 +23,7 @@ class Home extends Component{
 
     handleScroll(section){
         console.log(section)
-        scrollToComponent(this[section], { offset: -60, align: 'top', duration: 1000,  ease:'inOutExpo'})
+        scrollToComponent(this[section], { offset: -59, align: 'top', duration: 1000,  ease:'inOutExpo'})
     }
 
 

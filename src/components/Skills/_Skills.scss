@@ -1,5 +1,14 @@
 .Skills{
-    height: 200px;
-    width: 100%;
     background-color: lime;
+    text-align: center;
+    padding: 10px;
+    h3{
+        text-align: left;
+    }
+    .programming, .art{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        grid-gap: 10px;
+        margin-bottom:20px; 
+    }
 }
