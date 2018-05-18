@@ -1,20 +1,19 @@
 .About{
-    // height: 500px;
+    // height: 100vh;
     // width: 100%;
-    background-color: red;
+    // background-color: red;
     display: flex;
     justify-content: center;
-    
     .container{
         display: grid;
         grid-template-columns: minmax(100px, 1100px);
         .grid{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(3, minmax(60px, auto));
+            grid-template-rows: repeat(3, minmax(80px, auto));
             justify-content: center;
             align-items: center;
-            
+            grid-row-gap: 20px;
             h1{
                 grid-row:1;
                 grid-column-start: 1;
@@ -26,6 +25,9 @@
                 grid-column-start: 1;
                 grid-column-end: -1;
 
+            }
+            .Profile{
+                align-self: flex-start;
             }
         }
     }
