@@ -3,8 +3,8 @@ import React from 'react';
 const ArtistSvg = (props) => {
   const {className, height, width, fill , stroke, strokeWidth, onClick } = props
   return (
-    <svg id="artist" viewBox="0 0 32 32" className={className} height={height} width={width} fill={fill} stroke={stroke} strokeWidth={strokeWidth} onClick={onClick}>
-        <rect x="0" y="0" width="100%" height="100%" />
+    <svg id="artist" viewBox="0 0 100 100" className={className} height={height} width={width} fill={fill} stroke={stroke} strokeWidth={strokeWidth} onClick={onClick}>
+      <circle cx="50" cy="50" r="40" fill="blue" />
     </svg>
   )
 };
