@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Logo_SVG = (props) => {
+const LogoSvg = (props) => {
   const {className, height, width, fill , stroke, strokeWidth, onClick } = props
   return (
      <svg id="logo" viewBox="0 0 256 256" className={className} height={height} width={width} fill={fill} stroke={stroke} strokeWidth={strokeWidth} onClick={onClick}>
@@ -10,5 +10,5 @@ const Logo_SVG = (props) => {
   )
 };
 
-export default Logo_SVG;
+export default LogoSvg;
 

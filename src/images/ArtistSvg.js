@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Artist_SVG = (props) => {
+const ArtistSvg = (props) => {
   const {className, height, width, fill , stroke, strokeWidth, onClick } = props
   return (
     <svg id="artist" viewBox="0 0 32 32" className={className} height={height} width={width} fill={fill} stroke={stroke} strokeWidth={strokeWidth} onClick={onClick}>
@@ -9,4 +9,4 @@ const Artist_SVG = (props) => {
   )
 };
 
-export default Artist_SVG;
+export default ArtistSvg;

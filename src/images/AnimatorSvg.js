@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Animator_SVG = (props) => {
+const AnimatorSvg = (props) => {
   const {className, height, width, fill , stroke, strokeWidth, onClick } = props
   return (
     <svg id="animator" viewBox="0 0 32 32" className={className} height={height} width={width} fill={fill} stroke={stroke} strokeWidth={strokeWidth} onClick={onClick}>
@@ -9,4 +9,4 @@ const Animator_SVG = (props) => {
   )
 };
 
-export default Animator_SVG;
+export default AnimatorSvg;

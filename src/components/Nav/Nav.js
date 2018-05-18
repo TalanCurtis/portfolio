@@ -1,8 +1,8 @@
 import React from 'react';
 import $ from 'jquery';
 
-import Logo_SVG from '../../images/Logo_SVG';
-import Burger_SVG from '../../images/Burger_SVG';
+import LogoSvg from '../../images/LogoSvg';
+import BurgerSvg from '../../images/BurgerSvg';
 
 function Nav(props) {
     $(window)
@@ -34,19 +34,10 @@ function Nav(props) {
                     break;
             }
         });
-    function highlightActive() {
-        // var div = document.getElementsByClassName("About");
-        // var rect = div.getBoundingClientRect();
-        // alert("Coordinates: " + rect.left + "px, " + rect.top + "px");
-        let section = document.getElementsByClassName("Portfolio");
-        console.log(section)
-        let currentScrollPosition = document.documentElement.scrollTop
-        console.log(currentScrollPosition)
-    }
     return (
         <div className="Nav">
             <div className='logo-containter' onClick={() => props.handleScroll('Intro')}>
-                <Logo_SVG height='60px' width='60px' />
+                <LogoSvg height='60px' width='60px' />
                 <h1>Alan Curtis</h1>
             </div>
             <div className='buttons'>
@@ -55,7 +46,7 @@ function Nav(props) {
                 <h3 className="portfolio" onClick={() => props.handleScroll('Portfolio')}>Portfolio</h3>
                 <h3 className="contact" onClick={() => props.handleScroll('Contact')}>Contact</h3>
             </div>
-            <Burger_SVG className="Burger_SVG" height="40px" width="40px"/>
+            <BurgerSvg className="BurgerSvg" height="40px" width="40px"/>
         </div>
     )
 }

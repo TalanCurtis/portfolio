@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Burger_SVG = (props) => {
+const BurgerSvg = (props) => {
   const {className, height, width, fill , stroke, strokeWidth, onClick } = props
   return (
     <svg id="burger" viewBox="0 0 32 32" className={className} height={height} width={width} fill={fill} stroke={stroke} strokeWidth={strokeWidth} onClick={onClick}>
@@ -20,4 +20,4 @@ const Burger_SVG = (props) => {
   )
 };
 
-export default Burger_SVG;
+export default BurgerSvg;
