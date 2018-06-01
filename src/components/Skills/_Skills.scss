@@ -1,9 +1,15 @@
 .Skills{
-    // background-color: lime;
-    text-align: center;
-    padding: 10px;
+    background-color: lime;
+    display: flex;
+    justify-content: center;
+    .container{
+        display: grid;
+        grid-template-columns: minmax(100px, 900px);
+    }
+    // text-align: center;
+    // padding: 10px;
     h3{
-        text-align: left;
+        // text-align: left;
     }
     .programming, .art{
         display: grid;

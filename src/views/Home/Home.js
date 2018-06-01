@@ -6,6 +6,7 @@ import Footer from '../../components/Footer/Footer';
 import Nav from '../../components/Nav/Nav';
 import Intro from '../../components/Intro/Intro';
 import Portfolio from '../../components/Portfolio/Portfolio';
+import Skills from '../../components/Skills/Skills';
 
 // libraries
 import {TweenLite} from 'gsap';
@@ -36,6 +37,9 @@ class Home extends Component{
                  </section>
                  <section ref={(section) => { this.About = section; }}>
                     <About/>
+                 </section>
+                 <section ref={(section) => { this.Skills = section; }}>
+                    <Skills/>
                  </section>
                  <section ref={(section) => { this.Portfolio = section; }}>
                     <Portfolio/>

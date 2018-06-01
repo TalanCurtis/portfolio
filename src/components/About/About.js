@@ -13,7 +13,6 @@ function About (){
                         <h1>About</h1>
                         <Talents/>
                         <Profile/>
-                        <Skills/>
                     </div>
                 </div>
             </div>

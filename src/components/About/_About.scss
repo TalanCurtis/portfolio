@@ -6,11 +6,11 @@
     justify-content: center;
     .container{
         display: grid;
-        grid-template-columns: minmax(100px, 1100px);
+        grid-template-columns: minmax(100px, 900px);
         .grid{
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(3, minmax(80px, auto));
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(2, minmax(80px, auto));
             justify-content: center;
             align-items: center;
             grid-row-gap: 20px;
@@ -27,7 +27,9 @@
 
             }
             .Profile{
-                align-self: flex-start;
+                align-content: center;
+                grid-column-start: 1;
+                grid-column-end: -1;
             }
         }
     }
