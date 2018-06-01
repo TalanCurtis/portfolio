@@ -6,6 +6,7 @@
     top: 0px; 
     display: grid;
     grid-template-columns: auto auto;
+    z-index: 10;
 
     .logo-containter{
         display: flex;

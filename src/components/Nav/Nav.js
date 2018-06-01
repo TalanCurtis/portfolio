@@ -5,8 +5,7 @@ import LogoSvg from '../../images/LogoSvg';
 import BurgerSvg from '../../images/BurgerSvg';
 
 function Nav(props) {
-    $(window)
-    .scroll(function () {
+    $(window).scroll(function () {
             // Get position of components then subtract header height to change active state.
             let about = document.getElementsByClassName("About")[0].offsetTop - 60 ;
             let portfolio = document.getElementsByClassName("Portfolio")[0].offsetTop - 60 ;
@@ -39,6 +38,7 @@ function Nav(props) {
                     break;
             }
         });
+
     return (
         <div className="Nav">
             <div className='logo-containter' onClick={() => props.handleScroll('Intro')}>

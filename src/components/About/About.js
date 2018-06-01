@@ -1,11 +1,9 @@
 import React from 'react';
 
 import Profile from '../Profile/Profile';
-import Skills from '../Skills/Skills';
 import Talents from '../Talents/Talents';
 
 function About (){    
-        console.log('component mounted')
         return(
             <div className="About">
                 <div className='container'>
