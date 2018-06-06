@@ -19,7 +19,7 @@ class Home extends Component{
     }  
 
     componentDidMount(){
-        TweenLite.to('.Home', 1, {opacity:1})
+        // TweenLite.from('.Home', 1, {opacity:0})
     }
 
     handleScroll(section){
