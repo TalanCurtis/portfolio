@@ -26,7 +26,7 @@ function About() {
                     <div className='grid'>
                         <div className='sectionTitle'>
                             <h1 className='title'>About</h1>
-                            <LineSvg width='100'/>
+                            <LineSvg width='100' height='10'/>
                         </div>
                         <Talents/>
                         <Profile/>
