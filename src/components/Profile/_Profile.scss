@@ -4,20 +4,40 @@
     justify-content: center;
     opacity: 0;
     .container{
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+        justify-items: center;
         align-items: center;
         max-width: 600px;
         img{
             border-radius: 50%;
             width: 300px;
-            margin-bottom: 10px;
             transform: scale(0);
+            box-shadow: 5px 5px 8px #888888,
+                        -5px -5px 8px #888888,
+                        5px -5px 8px #888888, 
+                        -5px 5px 8px #888888;
         }
-        h2{
-            margin-bottom:5px; 
+        .text{
+            text-align: start;
+            h2{
+                margin-bottom:5px; 
+                justify-content: center;
+            }
         }
     } 
+}
+
+@media (max-width: 526px) {
+    .Profile{
+        .container{
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto;
+            .text{
+                text-align: center;
+            }
+        }
+    }
+
 }
