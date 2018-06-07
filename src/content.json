@@ -65,11 +65,16 @@
                 },
                 {
                     "id": 12,
+                    "image": "Redux-Icon.png",
+                    "title": "Redux"
+                },
+                {
+                    "id": 13,
                     "image": "Unity-Icon.png",
                     "title": "Unity"
                 },
                 {
-                    "id": 13,
+                    "id": 14,
                     "image": "UnrealEngine-Icon.png",
                     "title": "Unreal 4"
                 }
@@ -101,6 +106,16 @@
                     "id": 4,
                     "image": "ZBrush-Icon.png",
                     "title": "ZBrush"
+                },
+                {
+                    "id": 3,
+                    "image": "SubstanceDesigner-Icon.png",
+                    "title": "Designer"
+                },
+                {
+                    "id": 4,
+                    "image": "SubstancePainter-Icon.png",
+                    "title": "Painter"
                 }
             ]
         }
