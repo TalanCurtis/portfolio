@@ -14,7 +14,7 @@ function About() {
         .to('.sectionTitle .title', .75, {ease: Power4.easeOut, opacity:1 , x:0 } )
         .to('.sectionTitle svg', .75, {ease: Power4.easeOut, opacity:1 , x:0 }, '-=.45' )
         .staggerTo('.Talents div', .75, { ease: Power4.easeOut, opacity:1}, .25 , '-=.45')
-        .staggerTo('.Talents div svg', .75, { ease: Power4.easeOut, rotationY: 0}, .25, '-=.8')
+        .staggerTo('.Talents div svg', .75, { ease: Back.easeOut, rotationY: 0}, .25, '-=.8')
         .to('.Profile', .75, { ease: Power4.easeOut, opacity: 1, y:0}, '-=.45')
         .to('.Profile .container img', .75, { ease: Back.easeOut, opacity: 1, scale:1}, '-=.45' )
     }
